@@ -11,3 +11,6 @@ Please note this is **NOT** official course resources and is **NOT** associated,
 ## Usage
 1. `cd` into the sourcelib directory and run `nix develop` in the terminal.
 2. All the required tools should now be available for use and you should be able to `make`, `make flash` and `make clean`.
+
+## Troubleshooting
+You may not be able to enter the development environment due to Git not being aware of the `flake.nix` and `shell.nix`. This can be fixed by running `git -C "<SOURCELIB-DIRECTORY>" add "flake.nix"` and `git -C "<SOURCELIB-DIRECTORY>" add "shell.nix"` 
